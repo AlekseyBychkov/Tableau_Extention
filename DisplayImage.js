@@ -150,7 +150,8 @@
       
     // The getSummaryDataAsync() method returns a DataTable
     // Map the DataTable (worksheetData) into a format for display, etc.
-    const header = $(`<td><center>{JSON.stringify(worksheetData.getData())}</center></td>`);
+      var json_var=JSON.stringify(worksheetData.getData());
+    const header = $(`<td><center>{json_var}</center></td>`);
     $('#selected_marks').append(header);
       
       
