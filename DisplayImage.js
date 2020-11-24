@@ -94,9 +94,8 @@
       }*/
           var str = images[i][0]+" ";
           var tableImages = str.split(",");
-          const test = $(`<td><center>${tableImages}</center></td>`);
+          const test = $(`<td><center><img src="${tableImages}"width="100" height="100"></center></center></td>`);
           $('#selected_marks').append(test);
-      
    }
 
 
