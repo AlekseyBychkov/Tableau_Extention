@@ -85,7 +85,7 @@
       $('#selected_marks').append(start);
 
       const image = $(`<td><center><img src="
-      ${tableImages}"width="150" height="150"></center></td>`);
+      ${tableImages}"width="100" height="100"></center></td>`);
       $('#selected_marks').append(image);
       for (var j = 0; j < columnsName.length; j++) {
 
