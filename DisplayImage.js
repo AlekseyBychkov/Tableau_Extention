@@ -79,7 +79,7 @@
     
     for (var i = 0; i < images.length; i++) {
 
-      var str = images[i][0]+" ";
+      /*var str = images[i][0]+" ";
       var tableImages = str.split(",");
       const start = $(`<tr>`);
       $('#selected_marks').append(start);
@@ -88,12 +88,14 @@
       ${tableImages}"width="100" height="100"></center></td>`);
       $('#selected_marks').append(image);
       
-      /*for (var j = 0; j < columnsName.length; j++) {
+      for (var j = 0; j < columnsName.length; j++) {
           const test = $(`<td><center>${columnsData[i*columnsName.length+j]}</center></td>`);
           $('#selected_marks').append(test);
       }*/
       
-
+          const test = $(`<td><center>${images[i][0]}</center></td>`);
+          $('#selected_marks').append(test);
+      
    }
 
 
