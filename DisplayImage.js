@@ -39,7 +39,7 @@
    let unregisterEventHandlerFunction;
 
     function configure() { 
-      const popupUrl = `${window.location.origin}/extensionDialog.html`;
+      const popupUrl = `${window.location.origin}/Tableau_Extention/extensionDialog.html`;
     
       tableau.extensions.ui.displayDialogAsync(popupUrl, defaultIntervalInMin, { height: 500, width: 500 }).then((closePayload) => {
         $('#inactive').hide();
