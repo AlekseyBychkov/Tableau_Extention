@@ -79,7 +79,7 @@
     $('#selected_marks').empty();
     const header = $(`<td><center>Images</center></td>`);
     $('#selected_marks').append(header);
-    });
+
     
     
     
