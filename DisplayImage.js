@@ -92,8 +92,9 @@
           const test = $(`<td><center>${columnsData[i*columnsName.length+j]}</center></td>`);
           $('#selected_marks').append(test);
       }*/
-      
-          const test = $(`<td><center>${images[i][0]}</center></td>`);
+          var str = images[i][0]+" ";
+          var tableImages = str.split(",");
+          const test = $(`<td><center>${tableImages}</center></td>`);
           $('#selected_marks').append(test);
       
    }
