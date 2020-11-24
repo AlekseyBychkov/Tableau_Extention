@@ -67,15 +67,18 @@
 
 
   function displayImages(images,columnsData,columnsName){
-    $('#selected_marks').empty();
+    /*$('#selected_marks').empty();
     const header = $(`<th><center>Images</center></th>`);
     $('#selected_marks').append(header);
     var tableHeader;
     for (var i = 0; i < columnsName.length; i++) {
       
       tableHeader = $(`<th><center>${columnsName[i]}</center></th>`);
-      $('#selected_marks').append(tableHeader);
-    }
+      $('#selected_marks').append(tableHeader);*/
+    
+    $('#selected_marks').empty();
+    const header = $(`<td><center>Images</center></td>`);
+    $('#selected_marks').append(header);
     
     for (var i = 0; i < images.length; i++) {
 
@@ -96,14 +99,7 @@
           var tableImages = str.split(",");
           const test = $(`<td><center><img src="${tableImages}"width="100" height="100"></center></center></td>`);
           $('#selected_marks').append(test);
-   }
-
-
-
-    
-    
-    
-   
+   }  
   }
 
    function updateExtensionBasedOnSettings(settings) {
