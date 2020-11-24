@@ -77,8 +77,21 @@
       $('#selected_marks').append(tableHeader);*/
     
     $('#selected_marks').empty();
-    const header = $(`<td><center>Images</center></td>`);
+    //const header = $(`<td><center>Images</center></td>`);
+    
+    
+    
+    // get the summary data for the sheet
+    worksheet.getSummaryDataAsync().then(function (sumdata) {
+    const worksheetData = sumdata;
+    // The getSummaryDataAsync() method returns a DataTable
+    // Map the DataTable (worksheetData) into a format for display, etc.
+    const header = $(`<td><center>{JSON.stringify(worksheetData.getData())}</center></td>`);
     $('#selected_marks').append(header);
+    });
+    
+    
+    
     
     for (var i = 0; i < images.length; i++) {
 
